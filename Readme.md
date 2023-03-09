@@ -1,6 +1,6 @@
 # HTML-1 Грейдирование - Личный проект «Техномарт»
 
-* Студент: [Ивашнева Елена](https://up.htmlacademy.ru/htmlcss/35/user/2107255).
+Студент: [Ивашнева Елена](https://up.htmlacademy.ru/htmlcss/35/user/2107255).
 
 ---
 
