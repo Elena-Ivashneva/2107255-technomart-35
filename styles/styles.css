@@ -1,8 +1,68 @@
+/* ===== Fonts ===== */
+
+@font-face {
+	font-family: "Fira Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/fira-sans/fira-sans-bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/pt-sans/pt-sans-regular.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: italic;
+	font-weight: 400;
+	src: url("../fonts/pt-sans/pt-sans-italic.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/pt-sans/pt-sans-bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* ===== Global Selectors ===== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
 	object-fit: contain;
 }
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-width: 1400px;
+	min-height: 100%;
+	margin: 0;
+	font: normal 400 16px / 24px "PT Sans", sans-serif;
+	color: #293449;
+	background-color: #ffffff;
+	box-shadow: 0 4px 4px rgb(0 0 0 / 0.25);
+}
+
+/* ===== Public Classes ===== */
 
 .visually-hidden {
 	position: absolute;
@@ -15,4 +75,302 @@ img {
 	border: 0;
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
+}
+
+.container {
+	width: 1230px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.main-container {
+	flex-grow: 1;
+}
+
+.main-title {
+	margin: 0;
+	font: normal 700 36px / 42px "Fira Sans", sans-serif;
+	text-transform: uppercase;
+	color: #293449;
+}
+
+.main-subtitle {
+	margin: 0;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.subtitle {
+	margin: 0;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.text-large {
+	margin: 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #293449;
+}
+
+.text-small {
+	margin: 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+}
+
+.reset-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.normalize-button {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background-color: rgb(255 255 255 / 0);
+	border: 0;
+	cursor: pointer;
+}
+
+.normalize-input {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background-color: rgb(255 255 255 / 0);
+	border: 0;
+}
+
+/* ===== Header ===== */
+
+.header-contacts {
+	background-color: #f3f7f9;
+}
+
+.header-contacts-wrapper {
+	display: flex;
+	column-gap: 60px;
+	align-items: flex-start;
+	padding: 10px 0;
+}
+
+.index-title {
+	min-width: 480px;
+	margin: 3px 0 3px 2px;
+	font-style: italic;
+	color: #ee3643;
+}
+
+.header-address {
+	display: flex;
+	align-items: flex-start;
+	min-width: 509px;
+	margin: 1px 3px 0 auto;
+	font-style: normal;
+}
+
+.header-address-text {
+	margin-right: 31px;
+	min-width: 280px;
+	text-align: center;
+	color: #32425c;
+}
+
+.header-phone {
+	display: flex;
+	min-width: 198px;
+	margin-top: 1px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #293449;
+}
+
+.header-phone::before {
+	width: 16px;
+	height: 16px;
+	margin: 1px 8px 0 0;
+	background-image: url("../icons/stack.svg#phone-icon");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+}
+
+.header-menu-top {
+	background-color: #293449;
+}
+
+.header-menu-top-wrapper {
+	display: grid;
+	grid-template-columns: 220px 1fr 250px;
+	align-items: start;
+}
+
+.header-logo {
+	z-index: 1;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 220px;
+	height: 50px;
+	margin-bottom: -5px;
+	background-color: #ee3643;
+	box-shadow: inset 0 -5px 0 0 rgb(0 0 0 / 0.24);
+}
+
+.header-logo-image {
+	margin-top: 13px;
+}
+
+.header-search {
+	flex-grow: 1;
+}
+
+.header-search-label {
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0 21px;
+	cursor: pointer;
+}
+
+.header-search-label::after {
+	order: -2;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: 12px;
+	background-image: url("../icons/stack.svg#search-icon");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: 0.3;
+	content: "";
+}
+
+.header-search-label-text {
+	order: -1;
+	margin: 11px 15px 0 0;
+	padding: 0 6px 0 12px;
+	color: #ffffff;
+}
+
+.header-search-input {
+	flex-grow: 1;
+	padding: 10px 0 11px;
+	cursor: pointer;
+	appearance: textfield;
+}
+
+.header-search-input::-webkit-search-decoration,
+.header-search-input::-webkit-search-cancel-button,
+.header-search-input::-webkit-search-results-button,
+.header-search-input::-webkit-search-results-decoration {
+	appearance: none;
+}
+
+.header-search-input::placeholder {
+	color: #c5c5c5;
+	opacity: 0;
+}
+
+.header-auth {
+	justify-self: end;
+}
+
+.auth-login-button {
+	display: flex;
+	padding: 14px 2px 13px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #f1f5f7;
+}
+
+.auth-login-button::before {
+	width: 16px;
+	height: 16px;
+	margin: 1px 12px 0 0;
+	background-image: url("../icons/login-icon.svg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+}
+
+/* ===== Main ===== */
+
+.services {
+	background-color: #f4f7f9;
+}
+
+.services-wrapper {
+	padding: 52px 0 53px;
+}
+
+.services-title {
+	margin-bottom: 29px;
+	text-align: center;
+}
+
+.services-description {
+	width: 556px;
+	margin: 0 auto 18px;
+	text-align: center;
+}
+
+.services-description:last-of-type {
+	margin-bottom: 64px;
+}
+
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.service-card {
+	padding: 24px 39px 50px 31px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	box-shadow: 0 8px 20px 0 rgb(0 0 0 / 0.15);
+}
+
+.service-card::before {
+	display: block;
+	width: 90px;
+	height: 90px;
+	mask-repeat: no-repeat;
+	mask-size: 100%;
+	background-color: #ca2c37;
+	content: "";
+}
+
+.service-delivery::before {
+	mask-image: url("../icons/stack.svg#promo-delivery");
+}
+
+.service-warranty::before {
+	mask-image: url("../icons/stack.svg#services-warranty");
+}
+
+.service-credit::before {
+	mask-image: url("../icons/stack.svg#services-credit");
 }
