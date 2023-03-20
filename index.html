@@ -187,104 +187,102 @@
 			<section class="catalog">
 				<div class="container">
 					<div class="catalog-wrapper">
-						<h2 class="catalog-title"><span class="visually-hidden">Каталог.</span> Перфораторы</h2>
+						<h2 class="catalog-title main-title"><span class="visually-hidden">Каталог.</span> Перфораторы</h2>
 
 						<div class="catalog-products">
 							<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-								<fieldset class="catalog-filter-group">
-									<legend class="catalog-filter-title">Цена</legend>
+								<fieldset class="filter-group filter-group-price">
+									<legend class="filter-title filter-title-price">Цена</legend>
 
-									<div class="filter-range">
-										<div class="filter-range-scale-wrapper">
-											<div class="filter-range-scale">
-												<div class="filter-range-bar">
-													<button class="filter-range-toggle toggle-min" type="button">
-														<span class="visually-hidden">Изменить минимальную цену</span>
-													</button>
-													<button class="filter-range-toggle toggle-max" type="button">
-														<span class="visually-hidden">Изменить максимальную цену</span>
-													</button>
-												</div>
+									<div class="filter-range-slider">
+										<div class="filter-range-scale">
+											<div class="filter-range-bar">
+												<button class="filter-range-toggle range-toggle-min normalize-button" type="button">
+													<span class="visually-hidden">Изменить минимальную цену</span>
+												</button>
+												<button class="filter-range-toggle range-toggle-max normalize-button" type="button">
+													<span class="visually-hidden">Изменить максимальную цену</span>
+												</button>
 											</div>
 										</div>
+									</div>
 
-										<div class="filter-range-fields-wrapper">
-											<label class="filter-range-label">
-												<span class="visually-hidden">Минимальная цена</span>
-												<input class="filter-range-field" type="number" name="min-price" value="0" min="0">
-											</label>
-											<label class="filter-range-label">
-												<span class="visually-hidden">Максимальная цена</span>
-												<input class="filter-range-field" type="number" name="max-price" value="30000" min="0">
-											</label>
-										</div>
+									<div class="filter-range-fields">
+										<label class="filter-range-label range-label-min">
+											<span class="visually-hidden">Минимальная цена</span>
+											<input class="filter-range-field text-field" type="number" name="filter-min-price" value="0" min="0">
+										</label>
+										<label class="filter-range-label range-label-max">
+											<span class="visually-hidden">Максимальная цена</span>
+											<input class="filter-range-field text-field" type="number" name="filter-max-price" value="30000" min="0">
+										</label>
 									</div>
 								</fieldset>
 
-								<fieldset class="catalog-filter-group">
-									<legend class="catalog-filter-title">Производители</legend>
+								<fieldset class="filter-group filter-group-brands">
+									<legend class="filter-title filter-title-brands">Производители</legend>
 
-									<ul class="filter-controls-list">
-										<li class="filter-controls-item">
+									<ul class="filter-list text-small reset-list">
+										<li class="filter-item filter-item-checkbox">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-checkbox" type="checkbox" name="brands" value="bosch" checked>
-												<span class="filter-control-mark control-mark-checkbox"></span>
-												<span class="filter-control-label">BOSCH</span>
+												<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brands" value="bosch" checked>
+												<span class="filter-mark filter-mark-checkbox"></span>
+												<span class="filter-label filter-label-checkbox">BOSCH</span>
 											</label>
 										</li>
-										<li class="filter-controls-item">
+										<li class="filter-item filter-item-checkbox">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-checkbox" type="checkbox" name="brands" value="interskol">
-												<span class="filter-control-mark control-mark-checkbox"></span>
-												<span class="filter-control-label">ИНТЕРСКОЛ</span>
+												<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brands" value="interskol">
+												<span class="filter-mark filter-mark-checkbox"></span>
+												<span class="filter-label filter-label-checkbox">ИНТЕРСКОЛ</span>
 											</label>
 										</li>
-										<li class="filter-controls-item">
+										<li class="filter-item filter-item-checkbox">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-checkbox" type="checkbox" name="brands" value="makita" checked>
-												<span class="filter-control-mark control-mark-checkbox"></span>
-												<span class="filter-control-label">MAKIta</span>
+												<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brands" value="makita" checked>
+												<span class="filter-mark filter-mark-checkbox"></span>
+												<span class="filter-label filter-label-checkbox">MAKIta</span>
 											</label>
 										</li>
-										<li class="filter-controls-item">
+										<li class="filter-item filter-item-checkbox">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-checkbox" type="checkbox" name="brands" value="dewalt">
-												<span class="filter-control-mark control-mark-checkbox"></span>
-												<span class="filter-control-label">Dewalt</span>
+												<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brands" value="dewalt">
+												<span class="filter-mark filter-mark-checkbox"></span>
+												<span class="filter-label filter-label-checkbox">Dewalt</span>
 											</label>
 										</li>
-										<li class="filter-controls-item">
+										<li class="filter-item filter-item-checkbox">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-checkbox" type="checkbox" name="brands" value="hitachi">
-												<span class="filter-control-mark control-mark-checkbox"></span>
-												<span class="filter-control-label">Hitachi</span>
+												<input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="brands" value="hitachi">
+												<span class="filter-mark filter-mark-checkbox"></span>
+												<span class="filter-label filter-label-checkbox">Hitachi</span>
 											</label>
 										</li>
 									</ul>
 								</fieldset>
 
-								<fieldset class="catalog-filter-group">
-									<legend class="catalog-filter-title">Питание</legend>
+								<fieldset class="filter-group filter-group-power">
+									<legend class="filter-title filter-title-power">Питание</legend>
 
-									<ul class="filter-controls-list">
-										<li class="filter-controls-item">
+									<ul class="filter-list text-small reset-list">
+										<li class="filter-item filter-item-radio">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-radio" type="radio" name="power" value="cordless" checked>
-												<span class="filter-control-mark control-mark-radio"></span>
-												<span class="filter-control-label">Аккумуляторные</span>
+												<input class="filter-input filter-input-radio visually-hidden" type="radio" name="power" value="cordless" checked>
+												<span class="filter-mark filter-mark-radio"></span>
+												<span class="filter-label filter-label-radio">Аккумуляторные</span>
 											</label>
 										</li>
-										<li class="filter-controls-item">
+										<li class="filter-item filter-item-radio">
 											<label class="filter-control">
-												<input class="filter-control-input filter-control-radio" type="radio" name="power" value="corded">
-												<span class="filter-control-mark control-mark-radio"></span>
-												<span class="filter-control-label">Сетевые</span>
+												<input class="filter-input filter-input-radio visually-hidden" type="radio" name="power" value="corded">
+												<span class="filter-mark filter-mark-radio"></span>
+												<span class="filter-label filter-label-radio">Сетевые</span>
 											</label>
 										</li>
 									</ul>
 								</fieldset>
 
-								<button class="catalog-filter-button" type="submit">Показать</button>
+								<button class="filter-button text-button" type="submit">Показать</button>
 							</form>
 
 							<div class="catalog-results">
