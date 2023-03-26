@@ -7,8 +7,9 @@
 		<title>Техномарт | HTML Academy</title>
 		<meta name="description" content="Техномарт — интернет-магазин строительных материалов и инструментов для ремонта.">
 		<link rel="stylesheet" href="./styles/styles.min.css">
-		<link rel="icon" sizes="any" href="./favicon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+
+		<link rel="icon" href="./favicon.ico" sizes="any">
+		<link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
 	</head>
 
 	<body>
@@ -22,7 +23,7 @@
 						</h1>
 						<address class="header-address">
 							<p class="header-address-text text-small">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-							<a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+							<a class="header-phone text-button" href="tel:+78125550555">+7 (812) 555-05-55</a>
 						</address>
 					</div>
 				</div>
@@ -81,18 +82,14 @@
 							</ul>
 						</nav>
 
-						<ul class="user-menu reset-list">
-							<li class="user-menu-item">
-								<a class="user-menu-link user-menu-bookmarks" href="javascript:void(0)" data-bookmarks-counter="">
-									<span class="visually-hidden">Закладки</span>
-								</a>
-							</li>
-							<li class="user-menu-item">
-								<a class="user-menu-link user-menu-cart" href="javascript:void(0)" data-cart-counter="">
-									<span class="visually-hidden">Корзина</span>
-								</a>
-							</li>
-						</ul>
+						<div class="user-menu">
+							<a class="user-menu-button user-menu-bookmarks" href="javascript:void(0)" data-bookmarks-counter="">
+								<span class="visually-hidden">Закладки</span>
+							</a>
+							<a class="user-menu-button user-menu-cart" href="javascript:void(0)" data-cart-counter="">
+								<span class="visually-hidden">Корзина</span>
+							</a>
+						</div>
 
 						<a class="header-order-button button button-green text-button" href="javascript:void(0)">
 							Оформить заказ
