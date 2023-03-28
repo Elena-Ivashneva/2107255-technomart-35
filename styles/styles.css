@@ -417,10 +417,9 @@ body {
 
 .promo-wrapper {
 	display: grid;
-	grid-template-columns: 770px 370px;
+	grid-template-columns: 2fr 1fr;
 	gap: 28px 30px;
-	align-items: start;
-	padding-top: 51px;
+	padding: 51px 0 50px;
 }
 
 .promo-cards {
@@ -431,7 +430,7 @@ body {
 
 .promo-cards-catalog {
 	grid-column: 1 / -1;
-	grid-template-columns: repeat(3, 370px);
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .promo-cards-offers {
@@ -506,6 +505,7 @@ body {
 .promo-card-button {
 	display: flex;
 	width: 180px;
+	min-height: 40px;
 	margin-top: auto;
 	padding: 11px 11px 9px 5px;
 	text-decoration: none;
@@ -524,9 +524,14 @@ body {
 	content: "";
 }
 
+/* Promo Slider */
+
 .promo-slider {
 	position: relative;
-	background-color: #3d546f;
+}
+
+.slider-cards {
+	height: 100%;
 }
 
 .slider-card {
@@ -537,8 +542,10 @@ body {
 	align-items: flex-start;
 	width: 770px;
 	min-height: 390px;
+	height: 100%;
 	padding: 50px 50px 40px;
 	color: #ffffff;
+	background-color: #3d546f;
 }
 
 .slider-card.is-active {
@@ -561,14 +568,16 @@ body {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	height: 100%;
+	object-fit: cover;
 }
 
 .slider-card-title {
 	margin-bottom: 11px;
 }
 
-.slider-card-subtitle {
-	margin-bottom: 11px;
+.slider-card-description {
+	margin-bottom: 10px;
 	font-weight: 700;
 }
 
@@ -576,11 +585,12 @@ body {
 	min-width: 195px;
 	max-width: 220px;
 	margin-top: auto;
+	text-align: center;
 }
 
 .slider-controls {
 	position: absolute;
-	top: 180px;
+	top: calc(50% - 15px);
 	left: 20px;
 	right: 20px;
 	z-index: 2;
@@ -607,7 +617,7 @@ body {
 	content: "";
 }
 
-.slider-button-prev::before {
+.slider-prev::before {
 	transform: rotate(180deg);
 }
 
@@ -618,12 +628,14 @@ body {
 	z-index: 2;
 	display: flex;
 	gap: 8px;
-	max-width: 320px;
+	max-width: 280px;
+	line-height: 0;
 }
 
 .slider-pagination-button {
 	width: 8px;
 	height: 8px;
+	vertical-align: top;
 	background-color: rgb(255 209 128 / 0.8);
 	border-radius: 50%;
 }
@@ -635,7 +647,7 @@ body {
 /* === Catalog === */
 
 .catalog-wrapper {
-	padding: 50px 0 53px;
+	padding-bottom: 53px;
 }
 
 .catalog-title {
