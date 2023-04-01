@@ -647,17 +647,15 @@ body {
 /* === Catalog === */
 
 .catalog-wrapper {
+	display: grid;
+	grid-template-columns: 220px 1fr;
+	column-gap: 74px;
 	padding-bottom: 53px;
 }
 
 .catalog-title {
+	grid-column: 1 / -1;
 	margin-bottom: 26px;
-}
-
-.catalog-products {
-	display: grid;
-	grid-template-columns: 220px 1fr;
-	column-gap: 74px;
 }
 
 /* Catalog Filter */
@@ -684,9 +682,16 @@ body {
 	margin-bottom: 8px;
 }
 
+.filter-range {
+	display: grid;
+	row-gap: 7px;
+}
+
 .filter-range-slider {
-	margin-bottom: 7px;
-	padding: 19px 20px;
+	display: grid;
+	align-items: center;
+	height: 40px;
+	padding: 10px 19px;
 	background-color: #f7f3ec;
 	border-radius: 2px;
 }
@@ -694,16 +699,17 @@ body {
 .filter-range-scale {
 	position: relative;
 	height: 2px;
+	margin: 0 1px;
 	background-color: #3d546f;
 }
 
 .filter-range-bar {
 	position: absolute;
-	left: 0;
+	left: 9px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 89px;
+	width: 71px;
 	height: 100%;
 	background-color: #5fbb2d;
 }
@@ -711,28 +717,33 @@ body {
 .filter-range-toggle {
 	width: 20px;
 	height: 20px;
+	margin: 0;
+	padding: 0;
 	background-color: #ffffff;
-	box-shadow: inset 0 0 0 2px #3d546f;
+	border: 2px solid #3d546f;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 .range-toggle-min {
-	transform: translateX(-1px);
+	transform: translateX(-50%);
 }
 
 .range-toggle-max {
-	transform: translateX(1px);
+	transform: translateX(50%);
 }
 
 .filter-range-fields {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 30px 1fr;
 }
 
 .filter-range-fields::after {
+	align-self: center;
+	justify-self: center;
 	width: 8px;
 	height: 1px;
-	margin-top: 20px;
+	margin-top: 1px;
 	background-color: #293449;
 	content: "";
 }
@@ -746,9 +757,9 @@ body {
 }
 
 .filter-range-field {
-	width: 95px;
+	width: 100%;
 	margin: 0;
-	padding: 11px 12px;
+	padding: 11px;
 	text-align: center;
 	background-color: #f7f3ec;
 	border: 0;
@@ -770,11 +781,12 @@ body {
 	margin-bottom: 16px;
 }
 
-.filter-group-power {
-	margin: 0 0 45px 5px;
+.filter-group-powered {
+	margin-bottom: 45px;
+	padding-left: 5px;
 }
 
-.filter-title-power {
+.filter-title-powered {
 	margin-bottom: 18px;
 }
 
@@ -847,18 +859,16 @@ body {
 	content: "";
 }
 
-.filter-label-checkbox {
-	padding: 1px 2px 2px 0;
-}
-
-.filter-label-radio {
-	padding: 2px 2px 2px 0;
+.filter-label {
+	align-self: center;
+	padding-right: 5px;
 }
 
 .filter-button {
 	width: 100%;
+	min-height: 40px;
 	margin: 0;
-	padding: 10.5px 8.5px 7.5px;
+	padding: 10px 8px 8px 10px;
 	color: #32425c;
 	background-color: rgb(255 255 255 / 0);
 	border: 2px solid #3d546f;
