@@ -970,6 +970,49 @@ body {
 	display: none;
 }
 
+.catalog-pagination {
+	display: flex;
+	align-items: flex-start;
+	margin-left: 222px;
+}
+
+.pagination-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	max-width: 358px;
+	margin-right: 17px;
+}
+
+.pagination-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 50px;
+	max-width: 63px;
+	min-height: 45px;
+	padding: 14px 8px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 16px;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #3d546f;
+	border-radius: 2px;
+}
+
+.pagination-link.is-current {
+	color: #3d546f;
+	background-color: rgb(255 255 255 / 0);
+}
+
+.pagination-show-more {
+	min-width: 195px;
+	max-width: 220px;
+	padding: 14.5px 11px 12.5px 13px;
+	border-radius: 2px;
+}
+
 /* === Services === */
 
 .services {
