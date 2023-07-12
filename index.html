@@ -9,44 +9,57 @@
 		<link rel="stylesheet" href="./styles/styles.min.css">
 
 		<link rel="icon" href="./favicon.ico" sizes="any">
-		<link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
+		<link rel="icon" href="./favicons/favicon.png" type="image/png" sizes="32x32">
 	</head>
 
 	<body>
 		<header class="page-header">
-			<div class="header-contacts">
+			<div class="page-header-top">
 				<div class="container">
-					<div class="header-contacts-wrapper">
+					<div class="page-header-top-wrapper">
 						<h1 class="index-title text-small">
 							<span class="visually-hidden">Техномарт.</span>
 							Интернет-магазин строительных материалов и инструментов для ремонта
 						</h1>
-						<address class="header-address">
-							<p class="header-address-text text-small">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-							<a class="header-phone text-button" href="tel:+78125550555">+7 (812) 555-05-55</a>
+
+						<address class="page-header-address">
+							<p class="page-header-address-text text-small">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+							<a class="page-header-phone text-button" href="tel:+78125550555">+7 (812) 555-05-55</a>
 						</address>
 					</div>
 				</div>
 			</div>
 
-			<div class="header-menu-top">
+			<div class="page-header-middle">
 				<div class="container">
-					<div class="header-menu-top-wrapper">
-						<a class="header-logo" href="./index.html" aria-current="page">
+					<div class="page-header-middle-wrapper">
+						<a class="page-header-logo" href="./index.html" aria-current="page" aria-label="Главная">
 							<img class="header-logo-image" src="./images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт».">
-							<span class="visually-hidden">Главная</span>
 						</a>
 
-						<form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
-							<label class="header-search-label">
-								<input class="header-search-input normalize-input" type="search" name="header-search" placeholder="&nbsp;&nbsp;Поиск по сайту" autocomplete="off" required>
-								<span class="header-search-label-text">Поиск:</span>
+						<form class="page-header-search" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
+							<label class="header-search-field">
+								<input class="header-search-input normalize-input" type="search" name="header-search" placeholder="&nbsp;&nbsp;Поиск по сайту" required>
+								<span class="header-search-label">Поиск:</span>
 							</label>
 						</form>
 
-						<div class="header-auth">
-							<div class="auth-login-dropdown">
-								<button class="auth-login-button normalize-button text-button" type="button">Войти</button>
+						<!-- Для смены вида блока авторизации - добавить ему класс "is-active" -->
+
+						<div class="page-header-auth">
+							<div class="header-auth-wrapper header-auth-login is-active">
+								<button class="header-auth-button login-button text-button normalize-button" type="button">
+									Войти
+								</button>
+							</div>
+
+							<div class="header-auth-wrapper header-auth-profile-logout">
+								<a class="header-auth-button profile-button" href="javascript:void(0)">
+									Равшан Джамшутович
+								</a>
+								<a class="header-auth-button logout-button" href="javascript:void(0)">
+									<span class="visually-hidden">Выйти</span>
+								</a>
 							</div>
 						</div>
 					</div>
