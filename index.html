@@ -34,7 +34,7 @@
 				<div class="container">
 					<div class="page-header-middle-wrapper">
 						<a class="page-header-logo" href="./index.html" aria-current="page" aria-label="Главная">
-							<img class="header-logo-image" src="./images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт».">
+							<img class="logo-image" src="./images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт».">
 						</a>
 
 						<form class="page-header-search" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
@@ -47,17 +47,17 @@
 						<!-- Для смены вида блока авторизации - добавить ему класс "is-active" -->
 
 						<div class="page-header-auth">
-							<div class="header-auth-wrapper header-auth-login is-active">
-								<button class="header-auth-button login-button text-button normalize-button" type="button">
+							<div class="header-auth-container header-unlogged-container is-active">
+								<button class="header-auth-button header-login-button text-button" type="button">
 									Войти
 								</button>
 							</div>
 
-							<div class="header-auth-wrapper header-auth-profile-logout">
-								<a class="header-auth-button profile-button" href="javascript:void(0)">
+							<div class="header-auth-container header-logged-in-container">
+								<a class="header-auth-button header-profile-button" href="javascript:void(0)">
 									Равшан Джамшутович
 								</a>
-								<a class="header-auth-button logout-button" href="javascript:void(0)">
+								<a class="header-auth-button header-logout-button" href="javascript:void(0)">
 									<span class="visually-hidden">Выйти</span>
 								</a>
 							</div>
