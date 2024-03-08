@@ -23,43 +23,38 @@
 						<p class="main-address__location">
 							г. Санкт-Петербург, ул. Б.&nbsp;Конюшенная, д. 19/8
 						</p>
-						<a class="main-address__phone" href="tel:+78125550555">
+						<a class="main-address__phone interactive-element" href="tel:+78125550555">
 							+7 (812) 555-05-55
 						</a>
 					</address>
 				</div>
 			</div>
-
-			<div class="header-middle">
+			<div class="header__middle">
 				<div class="container">
-					<div class="header-middle-wrapper">
-						<a class="header-logo" href="./index.html" aria-current="page" aria-label="Главная">
-							<img class="logo-image" src="./images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт».">
+					<div class="header__middle-wrapper">
+						<a class="logo button button--secondary button--not-rounded" href="./index.html" aria-current="page" aria-label="Логотип-ссылка на Главную">
+							<img src="./images/logo.svg" width="108" height="18" alt="Техномарт.">
 						</a>
-
-						<form class="header-search" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
-							<label class="header-search-field">
-								<input class="header-search-input normalize-input" type="search" name="header-search" placeholder="&nbsp;&nbsp;Поиск по сайту" required>
-								<span class="header-search-label">Поиск:</span>
+						<form class="header__search-form search-form" action="https://echo.htmlacademy.ru/" method="get" autocomplete="off">
+							<label class="search-form__field" title="Поиск по сайту">
+								<span class="search-form__label">Поиск:</span>
+								<input class="search-form__input normalize-input" type="search" name="site-search" placeholder="&nbsp;&nbsp;Поиск по сайту" required>
 							</label>
 						</form>
-
-						<!-- Для смены вида блока авторизации - добавить ему класс "is-active" -->
-
-						<div class="header-auth">
-							<div class="header-auth-container header-unlogged-container is-active">
-								<button class="header-auth-button header-login-button text-button" type="button">
+						<div class="auth-menu">
+							<!-- Для смены вида меню авторизации - добавить ему класс-модификатор "active" -->
+							<div class="auth-menu__dropdown auth-menu__dropdown--active">
+								<button class="auth-menu__button auth-menu__button--login text-button interactive-element" type="button">
 									Войти
 								</button>
 							</div>
-
-							<div class="header-auth-container header-logged-in-container">
-								<a class="header-auth-button header-profile-button" href="javascript:void(0)">
+							<div class="auth-menu__dropdown">
+								<button class="auth-menu__button auth-menu__button--user interactive-element" type="button">
 									Равшан Джамшутович
-								</a>
-								<a class="header-auth-button header-logout-button" href="javascript:void(0)">
+								</button>
+								<button class="auth-menu__button auth-menu__button--logout interactive-element" type="button">
 									<span class="visually-hidden">Выйти</span>
-								</a>
+								</button>
 							</div>
 						</div>
 					</div>
@@ -142,7 +137,7 @@
 
 									<h4 class="slider-card-title main-title">Дрели</h4>
 									<p class="slider-card-description text-large">Соседям на радость!</p>
-									<a class="slider-card-button button-red text-button" href="javascript:void(0)">
+									<a class="slider-card-button button--secondary text-button" href="javascript:void(0)">
 										Открыть каталог
 									</a>
 								</li>
@@ -152,7 +147,7 @@
 
 									<h4 class="slider-card-title main-title">Перфораторы</h4>
 									<p class="slider-card-description text-large">Соседям на радость!</p>
-									<a class="slider-card-button button-red text-button" href="javascript:void(0)">
+									<a class="slider-card-button button--secondary text-button" href="javascript:void(0)">
 										Открыть каталог
 									</a>
 								</li>
@@ -325,7 +320,7 @@
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
 										<s class="product-price-old">22500 &#8381;</s>
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -339,7 +334,7 @@
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
 										<s class="product-price-old">22500 &#8381;</s>
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -352,7 +347,7 @@
 									</div>
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -366,7 +361,7 @@
 									</div>
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -379,7 +374,7 @@
 									</div>
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -393,7 +388,7 @@
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
 										<s class="product-price-old">22500 &#8381;</s>
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -408,7 +403,7 @@
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
 										<s class="product-price-old">22500 &#8381;</s>
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -422,7 +417,7 @@
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
 										<s class="product-price-old">22500 &#8381;</s>
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -435,7 +430,7 @@
 									</div>
 									<h3 class="product-title subtitle">Перфоратор BOSCH BFG&nbsp;3000</h3>
 									<div class="product-price text-button">
-										<a class="product-price-new button-red" href="javascript:void(0)"><b>15500 &#8381;</b></a>
+										<a class="product-price-new button--secondary" href="javascript:void(0)"><b>15500 &#8381;</b></a>
 									</div>
 									<div class="product-buttons">
 										<button class="product-button product-button-cart" type="button">Купить</button>
@@ -460,7 +455,7 @@
 									</li>
 								</ul>
 
-								<button class="pagination-show-more button button-red text-button" type="button">Показать еще</button>
+								<button class="pagination-show-more button button--secondary text-button" type="button">Показать еще</button>
 							</div>
 						</div>
 					</div>
